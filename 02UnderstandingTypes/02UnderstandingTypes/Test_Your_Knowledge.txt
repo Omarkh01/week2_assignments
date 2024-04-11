@@ -1,0 +1,78 @@
+﻿Test Your Knowledge 1
+
+1. 
+A person’s telephone number: string
+A person’s height: A floating-point number (float or double)
+A person’s age: An integer
+A person’s gender: a string.
+A person’s salary: decimal
+A book’s ISBN: A string
+A book’s price: decimal
+A book’s shipping weight: double
+A country’s population: int
+The number of stars in the universe: Long
+The number of employees: int
+
+2.
+
+Value Type: Value type variables store data directly. They are stored in the stack memory. When you assign one value type variable to another, a copy of the value is created. Examples of value types are int, float, char, and struct in C#.
+
+Reference Type: Reference type variables store references to their data (the address where the data is stored), which is located on the heap memory. When you assign one reference type variable to another, both refer to the same memory location. Thus, changes made through one variable will reflect in another. Examples include string, arrays, classes, and delegates in C#.
+
+3.
+
+Boxing is the process of converting a value type to the type object or to any interface type implemented by this value type. When the CLR boxes a value type, it wraps the value inside a System.Object and stores it on the heap.
+
+Unboxing is the process of extracting the value type from the object. Unboxing requires an explicit cast.
+Managed Resource vs Unmanaged Resource in .NET:
+
+4. 
+
+Managed Resources: These are resources that are managed by the .NET runtime's garbage collector. This includes instances of .NET classes, arrays, strings, and other types that inherit from the System.Object. The garbage collector automatically handles allocation and deallocation of memory for these resources.
+
+Unmanaged Resources: These are resources that are not managed by the .NET runtime's garbage collector. This includes file handles, window handles, connections, or any resources provided by other non-.NET frameworks. Developers are responsible for explicitly managing the lifetime of unmanaged resources, often through the IDisposable interface or using statement in C#.
+
+5.
+
+The Garbage Collector (GC) in .NET is responsible for managing the allocation and deallocation of memory for managed objects in the application. It automatically frees memory occupied by objects that are no longer in use, which helps to prevent memory leaks and ensures that the application uses memory efficiently. The garbage collector operates in the background, and it decides the best time to reclaim memory based on the application's allocation patterns and the amount of available memory.
+
+Test Your Knowledge 2
+
+1.
+When you attempt to divide an int variable by 0 in C#, a System.DivideByZeroException is thrown. Integer division by zero is considered an illegal operation in C#, and the runtime handles it by throwing an exception.
+
+2.
+Dividing a double variable by 0 in C# results in either Double.PositiveInfinity, Double.NegativeInfinity, or Double.NaN (Not a Number), depending on the context. Unlike integer division, floating-point division by zero does not throw an exception because the IEEE floating-point standard defines behavior for these cases:
+
+Positive number divided by 0 results in Double.PositiveInfinity.
+Negative number divided by 0 results in Double.NegativeInfinity.
+0 divided by 0 results in Double.NaN.
+
+3.
+When you exceed the range of an int variable (which is -2,147,483,648 to 2,147,483,647 in C#), and overflow checking is disabled (which is the default behavior for arithmetic operations in C#), the value wraps around from the maximum value to the minimum value, or vice versa. If overflow checking is enabled (using the checked keyword), an OverflowException is thrown.
+
+4.
+
+x = y++; is a post-increment operation. The value of y is assigned to x, and then y is incremented by 1.
+x = ++y; is a pre-increment operation. y is incremented by 1 first, and then its new value is assigned to x.
+
+5.
+break terminates the nearest enclosing loop or switch statement in which it appears. Control is passed to the statement that follows the terminated statement.
+continue skips the remaining portion of the nearest enclosing loop, moving directly to the next iteration of the loop.
+return exits from the current method, and control returns to the calling method. If used inside a loop, it will terminate the loop as well as exit from the method in which the loop resides.
+
+6.
+A for statement in C# typically has three parts: initialization, condition, and iteration (increment/decrement). Syntax: for (initialization; condition; iteration). None of these parts are strictly required; all can be omitted. However, omitting the condition effectively creates an infinite loop, unless a break statement is used within the loop body to terminate it.
+
+7.
+= is the assignment operator, used to assign the value on the right to the variable on the left.
+== is the equality operator, used to compare two values or variables for equality, returning true if they are equal and false otherwise.
+
+8.
+Yes, this statement compiles. It is an example of an infinite loop that does nothing each iteration. The loop continues indefinitely because the condition is always true, and there are no increment/decrement expressions or any code to execute in the loop body.
+
+9.
+In C# switch expressions, the underscore _ is used as a discard, representing the default case. It matches any values not matched by the preceding cases. Essentially, it's used when you want to provide a default outcome for the switch expression.
+
+10.
+To be enumerated over by using the foreach statement, an object must implement the IEnumerable interface (or IEnumerable<T> for generic collections). This interface requires that the object provides a method to get an enumerator, which implements IEnumerator (or IEnumerator<T> for generics), allowing the foreach loop to iterate through the collection.
