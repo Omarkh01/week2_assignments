@@ -12,3 +12,4 @@ C:\Users\omar_\Desktop\C#\02UnderstandingTypes\02UnderstandingTypes\obj\Debug\ne
 C:\Users\omar_\Desktop\C#\02UnderstandingTypes\02UnderstandingTypes\obj\Debug\net8.0\02UnderstandingTypes.pdb
 C:\Users\omar_\Desktop\C#\02UnderstandingTypes\02UnderstandingTypes\obj\Debug\net8.0\02UnderstandingTypes.genruntimeconfig.cache
 C:\Users\omar_\Desktop\C#\02UnderstandingTypes\02UnderstandingTypes\obj\Debug\net8.0\ref\02UnderstandingTypes.dll
+C:\Users\omar_\Desktop\C#\02UnderstandingTypes\02UnderstandingTypes\obj\Debug\net8.0\02UnderstandingTypes.sourcelink.json
