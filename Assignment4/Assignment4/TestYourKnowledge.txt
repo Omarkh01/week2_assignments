@@ -1,0 +1,38 @@
+﻿1. Problem Addressed by Generics:
+Generics address the problem of code duplication and type safety when dealing with collections or methods that can operate on objects of various types. They allow for the creation of classes, interfaces, and methods with placeholders for the types they operate on. This provides the ability to use the same code base while working with different types without sacrificing type safety or performance.
+
+2. Creating a List of Strings Using the Generic List Class:
+
+List<string> listOfStrings = new List<string>();
+
+3. Number of Generic Type Parameters in the Dictionary Class:
+The Dictionary<TKey, TValue> class has two generic type parameters: TKey for the keys and TValue for the values.
+
+4. True/False. When a generic class has multiple type parameters, they must all match.
+
+False. Multiple type parameters in a generic class do not need to be of the same type. They can represent different types and are independent of one another.
+
+5. Method Used to Add Items to a List Object:
+
+The Add method is used to add items to a List<T> object.
+
+6. Two Methods That Cause Items to be Removed from a List:
+
+Remove: Removes the first occurrence of a specific object from the List.
+RemoveAt: Removes the element at the specified index of the List.
+
+7. Indicating That a Class Has a Generic Type Parameter:
+
+A class is indicated to have a generic type parameter by appending <T> to the class name in its declaration, where T is a placeholder for the actual type to be specified when an instance of the class is created.
+
+8. True/False. Generic classes can only have one generic type parameter.
+
+False. Generic classes can have multiple type parameters, defined by a comma-separated list enclosed in angle brackets.
+
+9. True/False. Generic type constraints limit what can be used for the generic type.
+
+True. Generic type constraints limit the types that can be used as arguments for a generic type parameter, ensuring that it meets certain criteria, such as implementing a particular interface or inheriting from a specific class.
+
+10. True/False. Constraints let you use the methods of the thing you are constraining to.
+
+True. When you specify constraints on a generic type parameter, you enable the use of methods and properties specific to the type specified in the constraint, thereby enhancing the functionality and safety of your generic method or class.
